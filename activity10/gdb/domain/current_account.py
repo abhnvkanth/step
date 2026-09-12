@@ -1,4 +1,5 @@
 # gdb/domain/current_account.py
+# ACTIVITY 10: Replace this file with your completed Activity 9 version before writing the tests.
 from gdb.domain.bank_account import BankAccount
 from gdb.exceptions import (
     InactiveAccountException,
@@ -18,7 +19,6 @@ class CurrentAccount(BankAccount):
     def get_account_type(self) -> str:
         # TODO (Step 2): Fulfil the abstract contract -- return the product type name "Current".
         return "Current"
-        
 
     def withdraw(self, amount: float) -> None:
         if self._status.lower() != "active":
